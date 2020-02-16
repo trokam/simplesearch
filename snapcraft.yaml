@@ -8,14 +8,17 @@ confinement: strict
 base: core18
 
 apps:
-  textfinder:
+  simplesearch:
     command: simplesearch
 
 parts:
-  textfinder:
+  simplesearch:
     source: https://github.com/trokam/simplesearch.git
     plugin: qmake
     project-files: [simplesearch.pro]
+    install: |
+      install -d $SNAPCRAFT_PART_INSTALL/opt/myapp
+      install simplesearch $SNAPCRAFT_PART_INSTALL/opt/myapp/simplesearch    
     build-packages:
       - g++
       - libqt5x11extras5-dev
