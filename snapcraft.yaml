@@ -1,0 +1,26 @@
+name: simplesearch
+version: 1.0.0
+grade: stable
+summary: Just a test on generating a snap package for a Qt5 application
+description: |
+  Just a test on generating a snap package for a Qt5 application.
+confinement: strict
+base: core18
+
+apps:
+  textfinder:
+    command: simplesearch
+
+parts:
+  textfinder:
+    source: https://github.com/trokam/simplesearch.git
+    plugin: qmake
+    project-files: [simplesearch.pro]
+    build-packages:
+      - g++
+      - libqt5x11extras5-dev
+      - libqt5svg5-dev
+      - qtbase5-dev
+      - qttools5-dev
+      - qttools5-dev-tools
+
