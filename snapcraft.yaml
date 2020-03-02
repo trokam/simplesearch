@@ -9,11 +9,14 @@ base: core18
 
 apps:
   simplesearch:
-    command: simplesearch
+    command: desktop-launch simplesearch
+    plugs: [unity7, home]
 
 parts:
   simplesearch:
+    source: src/
     plugin: qmake
+    qt-version: qt5
     project-files: [simplesearch.pro]
     build-packages:
       - g++
