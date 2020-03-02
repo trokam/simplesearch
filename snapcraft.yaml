@@ -13,7 +13,7 @@ apps:
 
 parts:
   simplesearch:
-    source: https://github.com/trokam/simplesearch.git
+    source: .
     plugin: qmake
     project-files: [simplesearch.pro]
     build-packages:
