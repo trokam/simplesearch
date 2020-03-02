@@ -13,7 +13,7 @@ apps:
 
 parts:
   simplesearch:
-    source: src/
+    source: ./src
     plugin: qmake
     project-files: [simplesearch.pro]
     build-packages:
