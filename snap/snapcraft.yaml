@@ -9,8 +9,7 @@ base: core18
 
 apps:
   simplesearch:
-    command: desktop-launch simplesearch
-    plugs: [home, unity7, x11]
+    command: bin/simplesearch
 
 parts:
   simplesearch:
