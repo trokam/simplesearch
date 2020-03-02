@@ -9,10 +9,8 @@ base: core18
 
 apps:
   simplesearch:
-    command: qt5-launch simplesearch
-    plugs:
-      - unity7
-      - home
+    command: desktop-launch simplesearch
+    plugs: [home, unity7, x11]
 
 parts:
   simplesearch:
