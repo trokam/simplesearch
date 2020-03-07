@@ -9,7 +9,7 @@ base: core18
 
 apps:
   simplesearch:
-    command: $SNAP/opt/bin/simplesearch
+    command: $SNAP/bin/simplesearch
 
 parts:
   simplesearch:
@@ -17,9 +17,6 @@ parts:
     plugin: qmake
     qt-version: qt5
     project-files: [simplesearch.pro]
-    install: |
-      install -d $SNAPCRAFT_PART_INSTALL/opt/bin
-      install simplesearch $SNAPCRAFT_PART_INSTALL/opt/bin/simplesearch
     build-packages:
       - qtbase5-dev
       - qttools5-dev
