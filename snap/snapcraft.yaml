@@ -9,7 +9,7 @@ base: core18
 
 apps:
   simplesearch:
-    command: $SNAP/bin/simplesearch
+    command: trokam.simplesearch
 
 parts:
   simplesearch:
