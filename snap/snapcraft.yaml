@@ -18,7 +18,7 @@ parts:
     qt-version: qt5
     project-files: [simplesearch.pro]
     organize:
-        /build/simplesearch/parts/simplesearch/install/bin/simplesearch bin/simplesearch
+        /build/simplesearch/parts/simplesearch/install/bin/simplesearch: bin/simplesearch
     build-packages:
       - qtbase5-dev
       - qttools5-dev
