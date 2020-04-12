@@ -17,8 +17,6 @@ parts:
     plugin: qmake
     qt-version: qt5
     project-files: [simplesearch.pro]
-    organize:
-        /build/simplesearch/parts/simplesearch/install/bin/simplesearch: bin/simplesearch
     build-packages:
       - qtbase5-dev
       - qttools5-dev
@@ -26,3 +24,10 @@ parts:
       - libqt5x11extras5-dev
       - libqt5svg5-dev
 
+  my-part:
+    source: /build/simplesearch/parts/simplesearch/install/bin/
+    plugin: dump
+    organize:
+        /build/simplesearch/parts/simplesearch/install/bin/simplesearch: bin/simplesearch
+    prime:
+      - -LICENSE
