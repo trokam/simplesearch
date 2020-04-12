@@ -25,6 +25,7 @@ parts:
       - libqt5svg5-dev
 
   my-part:
+    source: https://github.com/trokam/simplesearch.git
     plugin: dump
     organize:
         /build/simplesearch/parts/simplesearch/install/bin/simplesearch: bin/simplesearch
