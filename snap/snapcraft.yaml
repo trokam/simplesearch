@@ -25,7 +25,6 @@ parts:
       - libqt5svg5-dev
 
   my-part:
-    source: /build/simplesearch/parts/simplesearch/install/bin/
     plugin: dump
     organize:
         /build/simplesearch/parts/simplesearch/install/bin/simplesearch: bin/simplesearch
