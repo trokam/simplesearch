@@ -28,6 +28,6 @@ parts:
     source: https://github.com/trokam/simplesearch.git
     plugin: dump
     organize:
-        /build/simplesearch/parts/simplesearch/install/bin/simplesearch: bin/simplesearch
+        /build/simplesearch/parts/simplesearch/install/simplesearch: bin/simplesearch
     prime:
-      - -LICENSE
+      - -bin/
